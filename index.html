@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<title>Curso Java Script</title>
+	</head>
+	<body>
+		<button onclick="gerarQuadrado()" class="botao">Adicionar</button>
+
+		<div class="app">
+			<div class="box"></div>
+		</div>
+
+		<script>
+			var btnCriar = document.querySelector('#btnCriar');
+			btnCriar.style.width= 100;
+			btnCriar.style.height= 100;
+			btnCriar.style.backgroundColor= '#f00';
+			btnCriar.style.margin = 10;
+
+			 function gerarQuadrado() {
+				let boxElement = document.createElement("div")
+				boxElement.style.width= 100;
+				boxElement.style.height= 100;
+				boxElement.style.backgroundColor= '#f00';
+				boxElement.style.margin = 10;
+
+				boxElement.classList.add('box');
+				document.body.appendChild(boxElement);
+			};
+
+		</script>
+	</body>
+</html>
